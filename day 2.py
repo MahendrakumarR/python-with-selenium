@@ -18,7 +18,7 @@ emp_Salary      = int(input("Enter Employee Salary:"))
 emp_Gender      = input("Enter Employee Gender:")
 emp_City        = input("Enter Employee City:")
 
-print("Employee Details")
+print("\nEmployee Details")
 print("================")
 print("Employee id:",emp_Id)
 print("Employee Name:",emp_Name)
