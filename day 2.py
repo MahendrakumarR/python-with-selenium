@@ -10,7 +10,7 @@ Description: Using datatype intialize the below details
              emp_Gender
              emp_City
 """
-"""
+
 emp_Id          = 1201
 emp_Name        = "MahendraN"
 emp_Email       = "mahe@gmail.com"
@@ -29,7 +29,7 @@ print("Employee Salary:",emp_Salary)
 print("Employee Gender:",emp_Gender)
 print("Employee City:",emp_City)
 
-"""
+
 
 """
 QUESTION 2:
@@ -45,7 +45,7 @@ Description: Using input() method get the below details
         :Find the total and average of marks
 
 """
-"""
+
 studentId    = int(input("\nEnter Student Id:"))
 studentName  = input("Enter Student Name:")
 Mark_1       = int(input("Enter Mark_1:"))
@@ -68,7 +68,7 @@ print("Student Mark_5 is:",Mark_5)
 print("Total:",total)
 print("Average is:",average)
 
-"""
+
 """
 QUESTION 3:
 ------------
@@ -82,7 +82,7 @@ Description: Using input() method get the below details
         student_City
 
 """
-"""
+
 student_Id = int(input("Enter Student ID: "))
 student_Name = input("Enter Student Name: ")
 student_Email = input("Enter Student Email: ")
@@ -101,7 +101,7 @@ print("Student Department:",student_Dept)
 print("Student Gender:",student_Gender)
 print("Student City:",student_City)
 
-"""
+
 """
 QUESTION 4:
 ------------
@@ -115,7 +115,7 @@ Description: Using datatype intialize the below details
         clg_Address
 
 """
-"""
+
 clg_Id         = 121
 clg_Name       = "Sri Vasavi College"
 clg_Email      = "info@svc.edu.in"
@@ -134,7 +134,7 @@ print("College Code is:",clg_Code)
 print("College Department Count is:",clg_Dept_Count)
 print("College Address is:",clg_Address)
 
-"""
+
 """
 QUESTION 5:
 ------------
@@ -149,7 +149,7 @@ Description: Using datatype intialize the below details
              com_CEO
              com_Founded_Date
 """
-"""
+
 company_Id = 101                        
 company_Name = "Solutions Ltd."    
 company_Email = "contact@techsolutions.com"  
@@ -173,13 +173,14 @@ print(f"Revenue: ${company_Revenue}")
 print(f"CEO: {company_CEO}")
 print(f"Founded Date: {company_Founded_Date}")
 
-"""
+
 """
 QUESTION 6:
 ------------
 Description: Using input() method get 15 bankdetails [15 variables]
 
 """
+
 bank_Name = input("Enter Bank Name: ")
 bank_Branch = input("Enter Bank Branch: ")
 bank_IFSC = input("Enter Bank IFSC Code: ")
@@ -215,3 +216,102 @@ print(f"PIN/ZIP Code: {bank_PIN_Code}")
 print(f"Customer Service Number: {bank_Customer_Service_Number}")
 
 
+"""
+QUESTION 7:
+------------
+Description: Using input() method enter all state name in India
+
+"""
+
+state_1 = input("Enter the name of state 1: ")
+state_2 = input("Enter the name of state 2: ")
+state_3 = input("Enter the name of state 3: ")
+state_4 = input("Enter the name of state 4: ")
+state_5 = input("Enter the name of state 5: ")
+state_6 = input("Enter the name of state 6: ")
+state_7 = input("Enter the name of state 7: ")
+state_8 = input("Enter the name of state 8: ")
+state_9 = input("Enter the name of state 9: ")
+state_10 = input("Enter the name of state 10: ")
+state_11 = input("Enter the name of state 11: ")
+state_12 = input("Enter the name of state 12: ")
+state_13 = input("Enter the name of state 13: ")
+state_14 = input("Enter the name of state 14: ")
+state_15 = input("Enter the name of state 15: ")
+state_16 = input("Enter the name of state 16: ")
+state_17 = input("Enter the name of state 17: ")
+state_18 = input("Enter the name of state 18: ")
+state_19 = input("Enter the name of state 19: ")
+state_20 = input("Enter the name of state 20: ")
+state_21 = input("Enter the name of state 21: ")
+state_22 = input("Enter the name of state 22: ")
+state_23 = input("Enter the name of state 23: ")
+state_24 = input("Enter the name of state 24: ")
+state_25 = input("Enter the name of state 25: ")
+state_26 = input("Enter the name of state 26: ")
+state_27 = input("Enter the name of state 27: ")
+state_28 = input("Enter the name of state 28: ")
+
+# Displaying the state names entered
+print("\nList of States in India:")
+print(f"1. {state_1}")
+print(f"2. {state_2}")
+print(f"3. {state_3}")
+print(f"4. {state_4}")
+print(f"5. {state_5}")
+print(f"6. {state_6}")
+print(f"7. {state_7}")
+print(f"8. {state_8}")
+print(f"9. {state_9}")
+print(f"10. {state_10}")
+print(f"11. {state_11}")
+print(f"12. {state_12}")
+print(f"13. {state_13}")
+print(f"14. {state_14}")
+print(f"15. {state_15}")
+print(f"16. {state_16}")
+print(f"17. {state_17}")
+print(f"18. {state_18}")
+print(f"19. {state_19}")
+print(f"20. {state_20}")
+print(f"21. {state_21}")
+print(f"22. {state_22}")
+print(f"23. {state_23}")
+print(f"24. {state_24}")
+print(f"25. {state_25}")
+print(f"26. {state_26}")
+print(f"27. {state_27}")
+print(f"28. {state_28}")
+
+
+"""
+QUESTION 8:
+------------
+Description: Using input() method get below details
+             district_State
+             district_Name
+             district_Area
+             district_population
+             district_Captial
+             district_Urban_Count
+             district_Rural_Count
+
+"""
+
+
+district_State = input("Enter the State of the District: ")
+district_Name = input("Enter the District Name: ")
+district_Area = input("Enter the District Area (in square kilometers): ")
+district_Population = int(input("Enter the District Population: "))
+district_Capital = input("Enter the District Capital: ")
+district_Urban_Count = int(input("Enter the Number of Urban Areas in the District: "))
+district_Rural_Count = int(input("Enter the Number of Rural Areas in the District: "))
+
+print("\nDistrict Details:")
+print(f"State: {district_State}")
+print(f"District Name: {district_Name}")
+print(f"Area: {district_Area} sq km")
+print(f"Population: {district_Population}")
+print(f"Capital: {district_Capital}")
+print(f"Urban Area Count: {district_Urban_Count}")
+print(f"Rural Area Count: {district_Rural_Count}")
