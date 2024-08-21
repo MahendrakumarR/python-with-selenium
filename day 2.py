@@ -135,3 +135,83 @@ print("College Department Count is:",clg_Dept_Count)
 print("College Address is:",clg_Address)
 
 """
+"""
+QUESTION 5:
+------------
+Description: Using datatype intialize the below details
+             com_Id
+             com_Name
+             com_Email
+             com_Phone_No
+             com_Employee_Count
+             com_Location
+             com_Revenue
+             com_CEO
+             com_Founded_Date
+"""
+"""
+company_Id = 101                        
+company_Name = "Solutions Ltd."    
+company_Email = "contact@techsolutions.com"  
+company_Phone_No = "0123456789"         
+company_Employee_Count = 250            
+company_Location = "Bangalore, India"   
+company_Revenue = 5000000.00            
+company_CEO = "John "                
+company_Founded_Date = "2010-05-15"     
+
+
+print("\nCompany Details:")
+print("================")
+print(f"ID: {company_Id}")
+print(f"Name: {company_Name}")
+print(f"Email: {company_Email}")
+print(f"Phone Number: {company_Phone_No}")
+print(f"Employee Count: {company_Employee_Count}")
+print(f"Location: {company_Location}")
+print(f"Revenue: ${company_Revenue}")
+print(f"CEO: {company_CEO}")
+print(f"Founded Date: {company_Founded_Date}")
+
+"""
+"""
+QUESTION 6:
+------------
+Description: Using input() method get 15 bankdetails [15 variables]
+
+"""
+bank_Name = input("Enter Bank Name: ")
+bank_Branch = input("Enter Bank Branch: ")
+bank_IFSC = input("Enter Bank IFSC Code: ")
+bank_MICR = input("Enter Bank MICR Code: ")
+bank_Account_Number = int(input("Enter Bank Account Number: "))
+bank_Account_Holder_Name = input("Enter Account Holder's Name: ")
+bank_Account_Type = input("Enter Account Type (e.g., Savings, Current): ")
+bank_Phone_Number = input("Enter Bank Phone Number: ")
+bank_Email = input("Enter Bank Email Address: ")
+bank_Address = input("Enter Bank Address: ")
+bank_City = input("Enter Bank City: ")
+bank_State = input("Enter Bank State: ")
+bank_Country = input("Enter Bank Country: ")
+bank_PIN_Code = int(input("Enter Bank PIN/ZIP Code: "))
+bank_Customer_Service_Number = int(input("Enter Bank Customer Service Number: "))
+
+
+print("\nBank Details:")
+print(f"Bank Name: {bank_Name}")
+print(f"Branch: {bank_Branch}")
+print(f"IFSC Code: {bank_IFSC}")
+print(f"MICR Code: {bank_MICR}")
+print(f"Account Number: {bank_Account_Number}")
+print(f"Account Holder's Name: {bank_Account_Holder_Name}")
+print(f"Account Type: {bank_Account_Type}")
+print(f"Phone Number: {bank_Phone_Number}")
+print(f"Email: {bank_Email}")
+print(f"Address: {bank_Address}")
+print(f"City: {bank_City}")
+print(f"State: {bank_State}")
+print(f"Country: {bank_Country}")
+print(f"PIN/ZIP Code: {bank_PIN_Code}")
+print(f"Customer Service Number: {bank_Customer_Service_Number}")
+
+
