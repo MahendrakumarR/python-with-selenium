@@ -267,3 +267,68 @@ count_is = input_string.count('is')
 print(count_is)
 
 """
+"""
+QUESTION 8:
+-------------
+Description:Get the input from the user and find the count of character 'o'
+
+Input:"Hi welcome to the world of programs"
+
+Output:
+-------
+5
+
+"""
+"""
+# Get input from the user
+user_input = input("Enter a string: ")
+
+# Count the occurrences of the character 'o'
+count_o = user_input.count('o')
+
+# Print the count
+print(f"The count of character 'o': {count_o}")
+
+"""
+"""
+QUESTION 9:
+----------
+
+Description: Given String as "Welcome" and count the number of consonants and vowels
+
+Example:
+---------
+Input  = Welcome
+
+output:
+-------
+vowels    = 3
+consonants = 4
+
+"""
+"""
+# Given string
+input_string = "Welcome"
+
+# Define vowels
+vowels = 'aeiou'
+
+# Initialize counters
+vowel_count = 0
+consonant_count = 0
+
+# Convert string to lowercase to make the count case-insensitive
+input_string_lower = input_string.lower()
+
+# Count vowels and consonants
+for char in input_string_lower:
+    if char in vowels:
+        vowel_count += 1
+    elif char.isalpha():  # Check if the character is a letter
+        consonant_count += 1
+
+# Print the counts
+print(f"vowels    = {vowel_count}")
+print(f"consonants = {consonant_count}")
+
+"""
