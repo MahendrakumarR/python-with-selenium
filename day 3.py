@@ -126,3 +126,144 @@ Description:Given String is "Welcome to Python class" and find the substring
 And also try with negative scenarios
 
 """
+"""
+# Given string
+input_string = "Welcome Java then Ruby to Python class"
+
+# Positive scenarios
+# Extracting each specified substring
+substring_1 = input_string[1]         # 'e'
+substring_2 = input_string[1:5]       # 'elco'
+substring_3 = input_string[23:25]     # 'to'
+substring_4 = input_string[26:32]     # 'Python'
+substring_5 = input_string[23:]       # 'to Python class'
+
+# Printing the positive scenario outputs
+print("Positive Scenarios:")
+print(substring_1)
+print(substring_2)
+print(substring_3)
+print(substring_4)
+print(substring_5)
+
+# Negative scenarios
+
+substring_6 = input_string.find('Java')     # Should return -1
+substring_7 = input_string.find('Ruby')     # Should return -1
+substring_8 = input_string.find('Pythonic') # Should return -1
+
+# Printing the negative scenario outputs
+print("\nNegative Scenarios:")
+print(f"Index of 'Java': {substring_6}")
+print(f"Index of 'Ruby': {substring_7}")
+print(f"Index of 'Pythonic': {substring_8}")
+
+"""
+"""
+QUESTION 5:
+-----------
+Description:Find whether the string python is present or not using 'if'
+
+Input = Programming languages are c,c++,Java and Python 
+   
+   if (s.find('Python') != -1):
+  
+     print("Contains substring 'Python'")
+   
+else:
+  
+     print("Doesn't contain substring")
+"""
+"""
+# Given string
+input_string = "Programming languages are c,c++,Java and Python"
+
+# Check if 'Python' is present in the string
+if input_string.find('Python') != -1:
+    print("Contains substring 'Python'")
+else:
+    print("Doesn't contain substring 'Python'")
+
+"""
+"""
+QUESTION 6:
+-----------
+
+QUESTION 6.1:
+-------------
+Description: Given String as "Welcome to Python class" and split it by space.
+
+Example:
+--------
+Input = Welcome to Python class 
+
+Output:
+-------
+Welcome
+to
+Python
+class
+
+"""
+"""
+# Given string
+input_string = "Welcome to Python class"
+
+# Split the string by spaces
+split_words = input_string.split(' ')
+
+# Print each word on a new line
+for word in split_words:
+    print(word)
+
+"""
+"""
+QUESTION 6.2:
+-------------
+Description: Given String as "Welcome to python class" and split it by l 
+
+Example:
+--------
+Input = Welcome to python class 
+Output:
+-------
+We
+come to python c
+ass
+
+"""
+"""
+# Given string
+input_string = "Welcome to python class"
+
+# Split the string by the letter 'l'
+split_by_l = input_string.split('l')
+
+# Print each part on a new line
+for part in split_by_l:
+    print(part)
+
+"""
+"""
+QUESTION 7:
+-----------
+Description:Find the count of word "is"
+
+Input: "Python is awesome and it is dynamic language"
+
+output:
+------
+2
+
+"""
+"""
+# Given string
+input_string = "Python is awesome and it is dynamic language"
+
+# Count the occurrences of the word "is"
+count_is = input_string.count('is')
+
+# Print the count
+print(count_is)
+
+"""
