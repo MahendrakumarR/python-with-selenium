@@ -1,4 +1,6 @@
 # list
+# In-place methods (like extend(), sort(), append(), remove(), etc.) modify the object they are called on and usually return None.
+# Non-in-place methods (like count(), sorted(), index(), etc.) return a value (e.g., a new list, count, or index) without modifying the original object
 
 # append()
 a = [1,2,3,4]
