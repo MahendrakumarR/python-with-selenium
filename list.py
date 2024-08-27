@@ -72,3 +72,27 @@ print(sort)
 sorte = [9,1,2,3,6,7,23]
 sorted = sorted(sorte)              
 print(sorted)                   # [1, 2, 3, 6, 7, 9, 23]
+
+# in not in
+num = [1,2,3,4,5]
+print(4 in num)                 # True
+
+num = [1,2,3,4,5]
+print(6 not in num)             # True
+
+# check the value is equal or not
+
+n1 = [1,2,3,4,5]
+n2 = [1,2,3,4,5]
+print(n1 == n2)                 # True
+
+# print one by one 
+
+o = [1,2,3,4,5]
+for i in o:
+    print(i)                    # 12345  (top - bottom)
+
+o1 = "Welcome"
+for i in o1:
+    print(i)                   # welcome (top - bottom)
+
