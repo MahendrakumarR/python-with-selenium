@@ -72,11 +72,61 @@ print(d1)                 # {2, 3, 4, 6, 9}
 
 """
 
-# pop() :- if going to remove anuone of the value from set
+# pop() :- if going to remove anyone of the value from set
 
 p = {11,32,45,62}
 p.pop()                   # here any one vlaue remove from set 
 print(p)                  # {11, 45, 62}
+
+# clear() :- it will clear all set value
+
+c = {100,200,300,400}
+c.clear()                   
+print(c)                  # set()
+
+# sorted() :- sort the values in ascending order
+
+s = {9,2,3,1,5}
+s1 = sorted(s)
+print(s1)                 # [1, 2, 3, 5, 9]
+
+# union() :- joining the two sets
+
+n1 = {1,9,3,4,5,2}
+n2 = {9,8,5,3,6,7}
+n3 = n1.union(n2)
+print(n3)                 # {1, 2, 3, 4, 5, 6, 7, 8, 9}
+
+# intersection() :- it returns the common values
+
+i = {0,2,4,6,8}
+i1 = {9,5,4,7,0}
+i3 = i.intersection(i1)
+print(i3)                 # {0, 4}
+
+# difference() :- 
+
+d = {15,10,100}
+d1 = {10,15,20}
+d2 = d.difference(d1)  # here same values are remove but remaining will print from 'd' not in 'd1'
+print(d-d1)            # {100}
+print(d2)              # {100}                 
+
+# symmetric difference() :- 
+
+d = {15,10,100}
+d1 = {10,15,20}
+d2 = d.symmetric_difference(d1)    # here same values are remove but remaining will print from 'd' and in 'd1'
+print(d ^ d1)                      # {100,20}
+print(d2)                          # {100,20}
+
+# To compare two sets 
+
+n1 = {9,2,3,4}
+n2 = {4,3,9,2}
+print(n1 == n2)                     # True
+
+
 
 
 
