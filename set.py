@@ -120,11 +120,62 @@ d2 = d.symmetric_difference(d1)    # here same values are remove but remaining w
 print(d ^ d1)                      # {100,20}
 print(d2)                          # {100,20}
 
+# copy() :-
+
+c = {9,4,5,2,1}
+c1 = c.copy()
+print(c)                           # {1, 2, 4, 5, 9}
+
 # To compare two sets 
 
 n1 = {9,2,3,4}
 n2 = {4,3,9,2}
-print(n1 == n2)                     # True
+print(n1 == n2)                    # True
+
+# To check the value is present or not in set
+
+n2 = {9,2,35,64}
+print(64 in n2)                    # True
+
+# convert anything into set
+
+#  * int :- this is not convert into set because int is immutable then this single value so.
+
+"""
+a = 10
+b = set(a)
+print(b)
+
+"""
+
+#  * float :- this is not convert into set because float is immutable then this is single value so.
+
+"""
+f = 10.3
+f1 = set(f)
+print(f1)
+
+"""
+
+#  * string :- this is  convert into set. string also immutable but  they have sequence of value so.
+
+s = "Welcome"
+s1 = set(s)
+print(s1)                   # {'l', 'W', 'e', 'o', 'c', 'm'}
+
+# * list :- list also convert into set
+
+l = [3,5,6,9]
+l1 = set(l)
+print(l1)                   # {9, 3, 5, 6}
+
+# iteration :-
+
+s = {91,43,233}
+for i in s:
+    print(i)               # 233 91 43  (top - bottom)
+
+
 
 
 
