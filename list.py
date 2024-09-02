@@ -7,6 +7,11 @@ a = [1,2,3,4]
 a.append(5)
 print(a)         # [1, 2, 3, 4, 5]
 
+# insert()
+a = [1,2,3,4]
+a.insert(2,9)
+print(a)        # [1, 2, 9, 3, 4]
+
 # max()
 a = [1,2,3,4]
 v = max(a)
@@ -57,15 +62,13 @@ print(i)                      # 6
 
 # sort()
 sor = [9,1,2,3,6,7,23]
-sort = sor.sort()
-print(sor)              
-print(sort) 
+sor.sort()
+print(sor)                    # [1, 2, 3, 6, 7, 9, 23]    
 
 # sort()  reverse()
 sor = [9,1,2,3,6,7,23]
-sort = sor.sort(reverse=True)
-print(sor)              
-print(sort) 
+sor.sort(reverse=True)
+print(sor)                    # [23, 9, 7, 6, 3, 2, 1]
 
 
 # sorted()

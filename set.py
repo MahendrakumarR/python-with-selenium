@@ -15,7 +15,7 @@
 """
 # len() :- Returns the length of the set
 
-num = {10,20,30,60} 
+num = {10,20,30,60}  
 le = len(num)
 print(le)                   # 4
 
