@@ -8,6 +8,7 @@ Description: Find the length of the below string
               String_3: s e l e n i u m
               String_4: 9876543210
               String_5: Hi welcome to the world of programs
+"""
 
 # Strings provided in the question
 String_1 = "GreensTechnology"
@@ -30,7 +31,7 @@ print(f"Length of String_3 '{String_3}' is: {length_String_3}")
 print(f"Length of String_4 '{String_4}' is: {length_String_4}")
 print(f"Length of String_5 '{String_5}' is: {length_String_5}")
 
-"""
+
 """
 QUESTION 2:
 -----------
@@ -52,7 +53,7 @@ Description:Find the index position
    Find the index of q and t
 
 """
-"""
+
 # String 1
 string_1 = "Greens Technology"
 index_e = string_1.find('e')
@@ -84,7 +85,7 @@ print(f"Index of 'Ruby' in '{string_4}': {index_ruby}")
 print(f"Index of 'q' in '{string_4}': {index_q}")
 print(f"Index of 't' in '{string_4}': {index_t}")
 
-"""
+
 """
 
 QUESTION 3:
@@ -95,7 +96,7 @@ Description:Using find method perform the below operations
    Find the occurence of automation and using
 
 """
-"""
+
 # String 1
 string_1 = "Selenium automation using Python"
 
@@ -107,7 +108,7 @@ print(f"Index of 'automation' in '{string_1}': {index_automation}")
 index_using = string_1.find('using')
 print(f"Index of 'using' in '{string_1}': {index_using}")
 
-"""
+
 """
 QUESTION 4:
 ----------
@@ -126,7 +127,7 @@ Description:Given String is "Welcome to Python class" and find the substring
 And also try with negative scenarios
 
 """
-"""
+
 # Given string
 input_string = "Welcome Java then Ruby to Python class"
 
@@ -158,7 +159,7 @@ print(f"Index of 'Java': {substring_6}")
 print(f"Index of 'Ruby': {substring_7}")
 print(f"Index of 'Pythonic': {substring_8}")
 
-"""
+
 """
 QUESTION 5:
 -----------
@@ -174,7 +175,7 @@ else:
   
      print("Doesn't contain substring")
 """
-"""
+
 # Given string
 input_string = "Programming languages are c,c++,Java and Python"
 
@@ -184,7 +185,7 @@ if input_string.find('Python') != -1:
 else:
     print("Doesn't contain substring 'Python'")
 
-"""
+
 """
 QUESTION 6:
 -----------
@@ -205,7 +206,7 @@ Python
 class
 
 """
-"""
+
 # Given string
 input_string = "Welcome to Python class"
 
@@ -216,7 +217,7 @@ split_words = input_string.split(' ')
 for word in split_words:
     print(word)
 
-"""
+
 """
 QUESTION 6.2:
 -------------
@@ -232,7 +233,7 @@ come to python c
 ass
 
 """
-"""
+
 # Given string
 input_string = "Welcome to python class"
 
@@ -243,7 +244,7 @@ split_by_l = input_string.split('l')
 for part in split_by_l:
     print(part)
 
-"""
+
 """
 QUESTION 7:
 -----------
@@ -256,7 +257,7 @@ output:
 2
 
 """
-"""
+
 # Given string
 input_string = "Python is awesome and it is dynamic language"
 
@@ -266,7 +267,7 @@ count_is = input_string.count('is')
 # Print the count
 print(count_is)
 
-"""
+
 """
 QUESTION 8:
 -------------
@@ -279,7 +280,7 @@ Output:
 5
 
 """
-"""
+
 # Get input from the user
 user_input = input("Enter a string: ")
 
@@ -288,47 +289,3 @@ count_o = user_input.count('o')
 
 # Print the count
 print(f"The count of character 'o': {count_o}")
-
-"""
-"""
-QUESTION 9:
-----------
-
-Description: Given String as "Welcome" and count the number of consonants and vowels
-
-Example:
----------
-Input  = Welcome
-
-output:
--------
-vowels    = 3
-consonants = 4
-
-"""
-"""
-# Given string
-input_string = "Welcome"
-
-# Define vowels
-vowels = 'aeiou'
-
-# Initialize counters
-vowel_count = 0
-consonant_count = 0
-
-# Convert string to lowercase to make the count case-insensitive
-input_string_lower = input_string.lower()
-
-# Count vowels and consonants
-for char in input_string_lower:
-    if char in vowels:
-        vowel_count += 1
-    elif char.isalpha():  # Check if the character is a letter
-        consonant_count += 1
-
-# Print the counts
-print(f"vowels    = {vowel_count}")
-print(f"consonants = {consonant_count}")
-
-"""
