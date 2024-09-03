@@ -265,5 +265,34 @@ list_2 = [30,40,50,60,80]
 print(list_1 == list_2)                         # False
 
 """
+QUESTION 10:
+--------------------
+QUESTION 10.1:
+--------------------
+Description : Get the each value of list by using  for loop
+              Input:   List = [105,205,305,405,505,605,705,805]
+"""
+list = (105,205,305,405,505,605,705,805)
+for i in list:
+    print(i)                                # 105,205,305,405,505,605,705,805  (top to bottom)
 
 """
+QUESTION 10.2:
+--------------------
+Description : Get the each value of list by using  Enumerate for loop
+              Input:   List = [105,205,305,405,505,605,705,805]
+"""
+list_loop = [105,205,305,405,505,605,705,805]
+for index, value in enumerate(list_loop):
+    print(f"The index is : {index} Value : {value}")   # The index is : 0 Value : 105  (top to bottom)
+
+"""
+QUESTION 10.3:
+---------------------
+Description : Get the each value of list by using  Enumerate for loop and print only even index value
+              Input:   List = [105,205,305,405,505,605,705,805]
+"""
+list_loop_1 = [105,205,305,405,505,605,705,805]
+for index, value in enumerate(list_loop_1):
+    if index % 2 == 0:
+        print(value)                                    # 105 305 505 705 (top to bottom)

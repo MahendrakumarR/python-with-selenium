@@ -220,7 +220,7 @@ for i in tuple:
 """
 QUESTION 8.2:
 --------------------
-Description : Get the each value of tuple by using  Enumarate for loop
+Description : Get the each value of tuple by using  Enumerate for loop
               Input:   tuple = (105,205,305,405,505,605,705,805)
 """
 tuple = (105,205,305,405,505,605,705,805)
@@ -230,7 +230,7 @@ for index, value in enumerate(tuple):
 """
 QUESTION 8.3:
 ---------------------
-Description : Get the each value of tuple by using  Enumarate for loop and print only even index value
+Description : Get the each value of tuple by using  Enumerate for loop and print only even index value
               Input:   tuple = (105,205,305,405,505,605,705,805)
 """
 tuple_2 = (105,205,305,405,505,605,705,805)
