@@ -151,7 +151,8 @@ print(v)                                    # 4
 QUESTION 5.2:
 --------------------
 Description :Find the maximum value  in tuple
-              Input:    tuple  = (10,20,30,90,10,10,40,50,10)
+              Input: tuple  = (10,20,30,90,10,10,40,50,10)
+              Input: tuple = ("A", "a")
 """
 tuple_max_min_alpha  = ("A", "a")
 tuple_max_min_num  = (10,20,30,90,10,10,40,50,10)
