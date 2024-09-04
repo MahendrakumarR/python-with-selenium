@@ -168,25 +168,3 @@ Description : Create a Dictionary with below key and Value and Add the value(900
 dict_8 = {10:100,20:200,30:300,40:400,50:500,60:600}
 dict_8[90] = 900
 print(dict_8)                  # {10: 100, 20: 200, 30: 300, 40: 400, 50: 500, 60: 600, 90: 900}
-
-"""
-QUESTION 7:
-------------------
-QUESTION 7.1:
---------------------
-Description : print all value in list
-              [[10,'vel','vel@gmail.com'],[20,'nisha','nisha@gmail.com'],[30,'bala','bala@gmail.com']]
-"""
-# Input dictionary
-data_dict = {
-    10: {'name': 'vel', 'email': 'vel@gmail.com'},
-    20: {'name': 'nisha', 'email': 'nisha@gmail.com'},
-    30: {'name': 'bala', 'email': 'bala@gmail.com'}
-}
-
-# Convert the dictionary into a list of lists
-output_list = [[key, value['name'], value['email']] for key, value in data_dict.items()]
-
-# Print the output list
-print(output_list)
-
