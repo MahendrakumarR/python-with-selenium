@@ -1,4 +1,4 @@
-# def (function)
+# def (function())
 
 """
 What is meant by functions in Python?
@@ -125,6 +125,116 @@ greens_Adayar(20,60)
 greens_Tambaram(40,20)
 greens_Velecherry(90,20)
 greens_Anna_Nagar(10,89)
+
+"""
+QUESTION 2:
+-----------
+QUESTION 2.1:
+-------------
+Functions  : add(),sub()
+
+Description: Create the above function and pass two arguments and returntype of one value
+
+"""
+def add(x,y):
+    
+    z = x + y
+    print(z)            # 127
+
+def sub(x,y):
+
+    z = x-y
+    return z 
+add(98,29)
+s = sub(5,4)
+print(s)               # 1
+
+"""
+QUESTION 2.2:
+-------------
+Functions  : calculator()
+
+Description: Create the above function and pass two arguments and  returntype of multiple values
+
+"""
+def calculator(x,y):
+    add = x + y
+    sub = x - y
+    mul = x * y
+    return add, sub, mul
+
+t = calculator(2,8)
+for i in t:
+    print(i)                    #  10 -6 16 (top to bottom)
+
+"""
+QUESTION 3:
+-----------
+QUESTION 3.1:
+-------------
+Description:Find the output for the below function
+
+def my_function(fname, lname):
+  print(fname + " " + lname)
+
+my_function("Harry")
+
+"""
+# def my_function(fname, lname):
+#      print(fname + " " + lname)        # TypeError: my_function() missing 1 required positional argument: 'lname'
+
+# my_function("Harry")             
+
+"""
+QUESTION 3.2:
+-------------
+Description:Find the output for the below function
+
+def my_function(country = "Norway"):
+  print("I am from " + country)
+
+my_function("Sweden")
+my_function("India")
+my_function()
+my_function("Brazil")
+
+"""
+def my_function(country = "Norway"):
+      print("I am from " + country)   # I am from Sweden | I am from India | I am from Norway | I am from Brazil
+
+my_function("Sweden")
+my_function("India")
+my_function()
+my_function("Brazil")
+
+"""
+QUESTION 4:
+-----------
+Functions  : company_details(),employee_details()
+
+Description: Create the below functions with three arguments with the default return type
+
+"""
+def company_details(name,location,industry):
+
+    return {
+        "name":name, 
+        "location":location, 
+        "industry":industry
+        }
+
+def employee_details(name,desticnation,salary):
+    
+    return {
+        "name":name,
+        "desticnation":desticnation, 
+        "salary":salary
+    }
+
+company = company_details("Mahendra","Erode","Tech")
+print(company)                                                  # {'name': 'Mahendra', 'location': 'Erode', 'industry': 'Tech'}
+employee = employee_details("MahendraN","HR","20000")
+print(employee)                                                 # {'name': 'MahendraN', 'desticnation': 'HR', 'salary': '20000'}
 
 """
 
