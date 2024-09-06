@@ -76,3 +76,45 @@ print(len(String_4))                                            # 10
 
 String_5 = "Hi welcome to the world of programs"
 print(len(String_5))                                            # 35
+
+"""
+QUESTION 2:
+-----------
+Description:Find the index position
+
+   String_1: Greens Technology
+   Find the index of e
+
+   String_2: Automation testing tool
+   Find the index of testing
+
+   String_3: Selenium automation using Python
+   Find the index of automation and using
+   
+   String_4: Programming languages are c,c++,Java and Python
+   Find the index of c
+   Find the index of Java
+   Find the index of Ruby
+   Find the index of q and t
+
+"""
+String_1 = "Greens Technology"
+v = String_1.find('e')
+print(v)                            # 2
+
+String_2 = "Automation testing tool"
+v1 = String_2.find('testing')
+print(v1)                           # 11
+
+String_3 = "Selenium automation using Python"
+v2 = String_3.find('automation')
+v3 = String_3.find('using')
+print(v2,v3)                        # 9 20
+
+String_4 = "Programming languages are c,c++,Java and Python "
+v4 = String_4.find('c')             # 26
+v5 = String_4.find('Java')          # 32
+v6 = String_4.find('Ruby')          # -1
+v7 = String_4.find('q')             # -1
+v8 = String_4.find('t')             # 43
+print(v4, v5, v6, v7, v8)           # 26 32 -1 -1 43 
