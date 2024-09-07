@@ -118,3 +118,51 @@ v6 = String_4.find('Ruby')          # -1
 v7 = String_4.find('q')             # -1
 v8 = String_4.find('t')             # 43
 print(v4, v5, v6, v7, v8)           # 26 32 -1 -1 43 
+
+"""
+QUESTION 3:
+-----------
+Description:Using find method perform the below operations
+
+   String_1: "Selenium automation using Python"
+   Find the occurence of automation and using
+
+"""
+
+String_5 = "Selenium automation using Python"
+v9 = String_5.find('automation')
+v10 = String_5.find('using')
+print(f"The word 'automation' occurece at : {v9}" )   # The word 'automation' occurece at : 9
+print(f"The word 'using' occurece at : {v10}" )       # The word 'using' occurece at : 20
+ 
+"""
+QUESTION 4:
+----------
+Description:Given String is "Welcome to Python class" and find the substring
+   
+   Input = "Welcome to Python class"
+
+   Outputs:
+   --------
+   e
+   elco
+   to
+   Python
+   to Python class
+
+And also try with negative scenarios
+
+"""
+input_str = "Welcome to Python class"
+
+output_1 = input_str[1]
+output_2 = input_str[1:5]
+output_3 = input_str[8:10]
+output_4 = input_str[11:17]
+output_5 = input_str[8:]
+
+print(output_1)             # e
+print(output_2)             # elco
+print(output_3)             # to
+print(output_4)             # python
+print(output_5)             # to python class
