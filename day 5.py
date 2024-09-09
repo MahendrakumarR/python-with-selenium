@@ -350,6 +350,6 @@ Description : What will be output of the following code?
 """
 x = 5.2
 if (type(x) is not int): 
-    print ("true")         # true
+    print ("true")         # true 
 else: 
     print ("false")
