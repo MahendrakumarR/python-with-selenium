@@ -155,3 +155,201 @@ print(x<y)       # False
 print(x<=y)      # False
 print(x>y)       # True
 print(x>=y)      # True
+
+"""
+QUESTION 2:
+------------------ 
+QUESTION 2.1:
+------------------  
+Description : Perform following  relational operator and return value
+              a='Greens'
+              b='Tech'
+
+              i)a<=b       ii)a>=b      iii)a<b      iv)a>b 
+"""
+a ='Greens'
+b ='Tech'
+print(a<=b)         # True
+print(a>=b)         # False
+print(a<b)          # True
+print(a>b)          # False
+
+"""
+QUESTION 3:
+-------------------
+Description : Perform following  equality operator and return value
+                  a=True
+                  b=30
+                  c=22.0
+                  d=False
+                  e=22
+                  f="Python"
+                  g=30+3j
+                  h="python"
+
+  i)a==b     ii)a!= b      iii)a==f    iv)a!=g     v)a!=d     vi)a==c
+
+  i)b==g     ii)b!= f      iii)b==e   iv)b!=g     v)b!=d     vi)b==c
+
+  i)f==h     ii)a!= b      iii)e==c    iv)a!=g     v)f!=g     vi)d==h
+
+"""
+a=True
+b=30
+c=22.0
+d=False
+e=22
+f="Python"
+g=30+3j
+h="python"
+
+print(a==b) # False
+print(a!=b) # True
+print(a==f) # False
+print(a!=g) # True
+print(a!=d) # True
+print(a==c) # False
+
+print(b==g) # False
+print(b!=f) # True
+print(b==e) # False
+print(b!=g) # True
+print(b!=d) # True
+print(b==c) # False
+
+print(f==h) # False
+print(a!=b) # True
+print(e==c) # True
+print(a!=g) # True
+print(f!=g) # True
+print(d==h) # False
+
+"""
+QUESTION 4:
+-------------------
+Description : Perform following  logical operator and return value
+                  a=True
+                  b=50
+                  c=66.0
+                  d=False
+                  e=66
+                  f="Greens"
+                  g=50+2j
+                  h="greens"
+
+  i)a and b     ii)a or b      iii)a and f    iv)a  or  g     v)a  and  d     vi)a or c
+ 
+  i)b and g     ii) not f      iii)e or f   iv)f and h    v)b  or  d     vi)b  and  e
+
+  i)not b       ii) not e      iii) not a
+
+"""
+a=True
+b=50
+c=66.0
+d=False
+e=66
+f="Greens"
+g=50+2j
+h="greens"
+
+print(a and b)   # 50
+print(a or b)    # True
+print(a and f)   # Greens
+print(a or g)    # True
+print(a and d)   # False
+print(a or c)    # True
+
+print(b and g)   # (50+2j)
+print(not f)     # False
+print(e or f)    # 66
+print(f and h)   # greens
+print(b or e)    # 50
+print(b and e)   # 66
+
+print(not b)     # false
+print(not e)     # false
+print(not a)     # false
+
+"""
+QUESTION 5:
+------------------
+Description : Find value of c and d?
+              a=20
+              b=30
+              c= a if a < b else b 
+              d=b if a>b else a
+
+"""
+a=20
+b=30
+c = a if a < b else b 
+d = b if a>b else a
+print(c)             # 20
+print(d)             # 20
+
+"""
+QUESTION 6:
+------------------
+Description : Find output of below code
+              x = 40
+              y = 22
+
+              print('x > y is',x>y)
+              print('x < y is',x<y)
+              print('x == y is',x==y)
+              print('x != y is',x!=y)
+              print('x >= y is',x>=y)
+              print('x <= y is',x<=y)
+
+"""
+x = 40
+y = 22
+
+print('x > y is :',x>y)      # x > y is : True
+print('x < y is :',x<y)      # x < y is : False
+print('x == y is :',x==y)    # x == y is : False
+print('x != y is :',x!=y)    # x != y is : True
+print('x >= y is :',x>=y)    # x >= y is : True
+print('x <= y is :',x<=y)    # x <= y is : False
+
+"""
+QUESTION 7:
+-------------------
+QUESTION 7.1:
+-------------------
+Description : Perform following  membership operator and return value
+              s ="Welcome to Greens Technology"
+
+               print('c' in s)
+               print('Greens' in s)
+               print('Come' in s)
+               print('to' not in s)
+               print('M' in s)
+               print('me' not  in s)
+"""
+s ="Welcome to Greens Technology"
+
+print('c' in s)                # True 
+print('Greens' in s)           # True
+print('Come' in s)             # False
+print('to' not in s)           # False
+print('M' in s)                # False
+print('me' not  in s)          # False
+
+"""
+QUESTION 8:
+------------------
+Description : What will be output of the following code?
+
+              x = 5.2
+              if (type(x) is not int): 
+                  print ("true") 
+              else: 
+                  print ("false")
+"""
+x = 5.2
+if (type(x) is not int): 
+    print ("true")         # true
+else: 
+    print ("false")
