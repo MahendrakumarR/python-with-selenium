@@ -237,5 +237,84 @@ employee = employee_details("MahendraN","HR","20000")
 print(employee)                                                 # {'name': 'MahendraN', 'desticnation': 'HR', 'salary': '20000'}
 
 """
+QUESTION 5:
+-----------
+QUESTION 5.1:
+-------------
+Description:Find the output for the below code 
+
+def computer_names(*names):
+  print(names)
+computer_names(name1="hp",name2="sony",name3="dell")
 
 """
+def computer_names(**names):
+    print(names)
+computer_names(name1="hp",name2="sony",name3="dell") # {'name1': 'hp', 'name2': 'sony', 'name3': 'dell'}
+
+"""
+QUESTION 6:
+-----------
+Arguments : country_name,area_covered,country_population,no_of_states,no_of_unionterritories
+
+Description: Create a function named as country_details and pass the above arguments 
+             print the values one by one
+
+"""
+
+def country_details(country_name,area_covered,country_population,no_of_states,no_of_unionterritories):
+    print("Wlecome to :",country_name)                              # Wlecome to : India
+    print("Area's covered :",area_covered)                          # Area's covered : 3200
+    print("Country population :",country_population)                # Country population : 100000000
+    print("No of states :",no_of_states)                            # No of states : 150
+    print("No of unionterritories :",no_of_unionterritories)        # No of unionterritories : 30
+
+country_details(country_name="India",area_covered=3200,country_population=100000000,no_of_states=150,no_of_unionterritories=30)
+
+"""
+QUESTION 7:
+-----------
+QUESTION 7.1:
+-------------
+Description: Create a recursive function of your own and print the word "Welcome"
+
+Output :
+--------
+Welcome 1
+.
+.
+.
+.
+
+"""
+def rec():
+    print("Welcome")
+#    rec()              # recursive function
+rec()                   # Welcome..........infinity times(top to bottom)
+
+"""
+QUESTION 7.2:
+-------------
+Description:Create a recursive function of your own and print the word "python" upto 100 times
+
+Output :
+--------
+python 1
+.
+.
+.
+.
+python 99
+
+"""
+count = 0
+
+def cou():
+    global count
+    print('Python',count)
+    if count == 100:
+        return
+    count = count + 1
+    cou()
+cou()                       # python 1 to python 100 (top to bottom)
+
