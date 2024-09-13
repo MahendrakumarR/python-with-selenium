@@ -307,14 +307,72 @@ python 1
 python 99
 
 """
-count = 0
+#count = 0
 
-def cou():
-    global count
-    print('Python',count)
-    if count == 100:
-        return
-    count = count + 1
-    cou()
-cou()                       # python 1 to python 100 (top to bottom)
+#def cou():
+#    global count
+#    print('Python',count)
+#    if count == 100:
+#       return
+#    count = count + 1
+#    cou()
+#cou()                       # python 1 to python 100 (top to bottom)
 
+"""
+QUESTION 7.3:
+-------------
+Description:Write a program for factorial of 5 using recursion
+
+Output :
+--------
+120
+
+"""
+def fac(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * fac(n-1)     # here using function name for recursion
+    
+result = fac(5)
+print(result)                   # 120
+
+"""
+QUESTION 8:
+-----------
+QUESTION 8.1:
+-------------
+Description: Using lambda function perform addition,subtraction and multiplication 
+
+"""
+s = lambda a,b : a + b          # addition
+print(s(19,18))                 # 37
+
+s1 = lambda a,b : a - b         # subtraction
+print(s1(18,21))                # -3
+
+s2 = lambda a,b : a * b         # multiplication
+print(s2(7,9))                  # 63
+
+"""
+QUESTION 8.2:
+-------------
+Description: Using lambda function perform cube of given number 
+
+"""
+q = lambda x : x ** 3
+print(q(4))            # 64
+
+"""
+QUESTION 8.3:
+-------------
+Description: Using lambda function check whether given number is odd or Even
+
+"""
+g = lambda x : "odd" if x % 2 == 0 else "even"
+print(g(10))           # odd
+
+"""
+
+
+"""
