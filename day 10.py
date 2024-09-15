@@ -168,3 +168,37 @@ Description : Create a Dictionary with below key and Value and Add the value(900
 dict_8 = {10:100,20:200,30:300,40:400,50:500,60:600}
 dict_8[90] = 900
 print(dict_8)                  # {10: 100, 20: 200, 30: 300, 40: 400, 50: 500, 60: 600, 90: 900}
+
+"""
+QUESTION 6.2:
+--------------------
+Description : print all value in list
+        [{'id':10,'name':'vel','email':'vel@gmail.com'},{'id':20,'name':'nisha','email':'nisha@gmail.com'},{'id':30,'name':'bala','email':'bala@gmail.com'}]
+"""
+
+data = [
+        {'id':10,'name':'vel','email':'vel@gmail.com'},        # dict_values([10, 'vel', 'vel@gmail.com'])
+        {'id':20,'name':'nisha','email':'nisha@gmail.com'},    # dict_values([20, 'nisha', 'nisha@gmail.com'])
+        {'id':30,'name':'bala','email':'bala@gmail.com'}       # dict_values([30, 'bala', 'bala@gmail.com'])
+    ]
+for item in data:
+    print(item.values())
+
+"""
+QUESTION 7:
+------------------
+QUESTION 7.1:
+--------------------
+Description : print all value in tuple
+              ([10,'vel','vel@gmail.com'],[20,'nisha','nisha@gmail.com'],[30,'bala','bala@gmail.com'])
+
+"""
+data = (
+    [10,'vel','vel@gmail.com'],        
+    [20,'nisha','nisha@gmail.com'],
+    [30,'bala','bala@gmail.com']
+    )
+
+for item in data:                   # (10, 'vel', 'vel@gmail.com')
+    v = tuple(item)                 # (20, 'nisha', 'nisha@gmail.com')
+    print(v)                        # (30, 'bala', 'bala@gmail.com')
