@@ -289,3 +289,6 @@ count_o = user_input.count('o')
 
 # Print the count
 print(f"The count of character 'o': {count_o}")
+
+
+# ------------------------------ End -----------------------------------------

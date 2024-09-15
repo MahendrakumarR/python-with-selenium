@@ -315,3 +315,6 @@ print(f"Population: {district_Population}")
 print(f"Capital: {district_Capital}")
 print(f"Urban Area Count: {district_Urban_Count}")
 print(f"Rural Area Count: {district_Rural_Count}")
+
+
+# ------------------------------ End -----------------------------------------

@@ -374,3 +374,6 @@ print(s2.isnumeric())           # False
 print(s3.isalnum())             # True
 print(s4.isdecimal())           # False
 print(s5.isdigit())             # False
+
+
+# ------------------------------ End -----------------------------------------

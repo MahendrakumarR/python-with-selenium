@@ -202,3 +202,6 @@ data = (
 for item in data:                   # (10, 'vel', 'vel@gmail.com')
     v = tuple(item)                 # (20, 'nisha', 'nisha@gmail.com')
     print(v)                        # (30, 'bala', 'bala@gmail.com')
+
+
+# ------------------------------ End -----------------------------------------

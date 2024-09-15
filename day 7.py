@@ -296,3 +296,6 @@ list_loop_1 = [105,205,305,405,505,605,705,805]
 for index, value in enumerate(list_loop_1):
     if index % 2 == 0:
         print(value)                                    # 105 305 505 705 (top to bottom)
+
+
+# ------------------------------ End -----------------------------------------
