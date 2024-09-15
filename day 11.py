@@ -373,6 +373,60 @@ g = lambda x : "odd" if x % 2 == 0 else "even"
 print(g(10))           # odd
 
 """
+QUESTION 9:
+------------
+Description: Using filter print only the even numbers from the list
 
+Input  : [1, 5, 4, 6, 8, 11, 3, 12]
+
+Output : [4, 6, 8, 12]
 
 """
+l = [1, 5, 4, 6, 8, 11, 3, 12]
+print(list(filter(lambda y: y % 2 == 0 ,l)))  # [4, 6, 8, 12]
+
+"""
+QUESTION 10:
+-----------
+Description: Using map write a program to double each item in a list
+
+Input  :[2, 4, 8, 11, 24, 10, 3, 27]
+
+Output :[4, 8, 16, 22, 48, 20, 6, 54]
+
+"""
+l = [2, 4, 8, 11, 24, 10, 3, 27]
+print(list(map(lambda y: y *2 ,l)))  # [4, 8, 16, 22, 48, 20, 6, 54]
+
+"""
+QUESTION 11:
+------------
+QUESTION 11.1:
+--------------
+Description:Using reduce write a program to add the numbers
+
+Input  :[1,2,4,3]
+
+Output :
+--------
+10
+
+"""
+from functools import reduce  # here import reduce then code work
+l = [1,2,4,3]
+print(int(reduce(lambda z,y: z+y,l))) # 10
+
+"""
+QUESTION 11.2:
+--------------
+Description:Using reduce write a program to multiply the numbers
+
+Input  :[2,6,11,24,27]
+
+Output :
+--------
+85536
+
+"""
+l = [2,6,11,24,27]
+print(int(reduce(lambda x,y: x*y,l))) # 85536
