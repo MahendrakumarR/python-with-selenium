@@ -113,4 +113,27 @@ for x in range(1,4):
        for y in range(1,x):
         print(y)             # 112 (top to bottom)
 
+"""
+
+QUESTION 6:
+-----------
+for x in range(1,4):
+   for y in range(x+1,4):
+       print(y)
+"""
+for x in range(1,4):
+    for y in range(x+1,4):
+        print(y)             #  233 (top to bottom)
+
+"""
+QUESTION 11:
+------------
+for x in range(1,100):
+    if(x==5):
+        print(x)
+
+"""
+for x in range(1,100):
+    if(x==5):
+        print(x)          # 5
 
