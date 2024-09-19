@@ -126,7 +126,7 @@ for x in range(1,4):
         print(y)             #  233 (top to bottom)
 
 """
-QUESTION 11:
+QUESTION 7:
 ------------
 for x in range(1,100):
     if(x==5):
@@ -136,4 +136,72 @@ for x in range(1,100):
 for x in range(1,100):
     if(x==5):
         print(x)          # 5
+
+"""
+QUESTIONS(Programs)
+-------------------
+QUESTION 1:
+-----------
+Description: Write Python program to allow the user to input his/her age.     
+             Then the program will show if the person is eligible to vote.
+             A person who is eligible to vote must be older than or equal 1 to 18 years old.
+Example:
+--------
+Input  = 10
+Output = print not eligible.
+
+"""
+#user = int(input("Enter Your Age:"))
+#if user >= 18:
+#    print(f"You are {user} years old so eligble for vote.")
+#else:                                                               # Enter Your Age:10
+#    print(f"You are {user} years old so not eligble for vote.")     # You are 10 years old so not eligble for vote.
+
+"""
+QUESTION 2:
+-----------
+Description: Write a program to find even or odd number
+
+Example:
+---------
+Input  = 10
+Output = Even
+
+"""
+i = 10
+if i % 2 == 0:
+    print(f"The given number {i} is Even")
+else:
+    print(f"The given number {i} is Odd")       # The given number 10 is Even
+
+"""
+QUESTION 3:
+------------
+Description: Write a program to print even number from 1 to 100 
+
+Example:
+---------
+Output = 2,4,....100
+
+"""
+for i in range(1,100):
+    if i % 2 == 0:
+        print(i)        # (2,4,6,...98) (top to bottom)
+"""
+QUESTION 4:
+------------
+Description: Find the sum of odd number 1 to 100
+
+Example:
+--------
+Output = 2500
+
+"""
+odd = 0
+for i in range(1,101):
+    if i % 2 !=0:
+        odd += i
+print("Sum of Odd numbers are:",odd) # 2500
+        
+    
 
