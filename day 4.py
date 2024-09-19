@@ -199,7 +199,7 @@ Output = 2500
 """
 odd = 0
 for i in range(1,101):
-    if i % 2 !=0:
+    if i % 2 !=0:           
         odd += i
 print("Sum of Odd numbers are:",odd) # 2500
         
