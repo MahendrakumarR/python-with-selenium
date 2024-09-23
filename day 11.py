@@ -1,4 +1,4 @@
-# def (function())
+# def (function()) 
 
 """
 What is meant by functions in Python?
