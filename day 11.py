@@ -5,7 +5,7 @@ What is meant by functions in Python?
 
     Functions are reusable blocks of code that perform a specific task.
 
-What are the types of functions?
+What are the types of functions? 
     
     Built-in functions, user-defined functions, lambda functions, and recursive functions.
 
