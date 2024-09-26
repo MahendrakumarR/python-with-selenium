@@ -172,3 +172,46 @@ Description :Create a File  in "E:\\Python Notes\\read.txt with "a" mode and fol
              Step 2: Close the file
 
 """
+f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "a")
+text ="\nWelcome to Greens Technology Java Class . Java is simple language ."
+c = text.replace("Java","python")
+f.write(c + "\n")
+f.close()
+
+"""
+QUESTION 3:
+-----------
+QUESTION 3.1:
+-------------
+Description :Create a File  in "E:\\Python Notes\\read.txt with "w" mode and follow below steps
+             Step 1: Write the below content in line by line
+                     Java Class
+                     Python Class
+                     Selenium Class
+                     Mobile Testing Class
+"""
+f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "w")
+f.write("Java Class")
+f.write("\nPython Class")
+f.write("\nSelenium Class")
+f.write("\nMobile Testing Class\n")
+f.close()
+
+"""
+QUESTION 3.2:
+-------------
+Description :Create a File  in "E:\\Python Notes\\read.txt with "a" mode and follow below steps
+             Step 1: Add the below content in line by line
+                     Api Testing
+                     Postman Tool
+                     Appium
+"""
+f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "a")
+f.write("\nApi Testing")
+f.write("\nPostman Tool")
+f.write("\nAppium")
+f.close()
+
+"""
+
+"""
