@@ -204,7 +204,7 @@ Description :Create a File  in "E:\\Python Notes\\read.txt with "a" mode and fol
              Step 1: Add the below content in line by line
                      Api Testing
                      Postman Tool
-                     Appium
+                     Appium 
 """
 f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "a")
 f.write("\nApi Testing")
@@ -213,5 +213,12 @@ f.write("\nAppium")
 f.close()
 
 """
+
+"""
+
+"""
+QUESTION 4.2:
+-------------
+Description :Read all content in file  uing read() method
 
 """

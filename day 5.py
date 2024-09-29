@@ -7,7 +7,7 @@
 5.Special Operator
 6.Assignment Operator
 7.Bitwise Operator
-
+ 
 """
 """
 What are operators in Python?
