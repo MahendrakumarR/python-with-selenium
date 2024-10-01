@@ -84,6 +84,9 @@ QUESTIONS(Programs)
 --------------------
 QUESTION 1:
 ------------
+    Description:
+    create all class methods into the Languageclass [derived class]  using multilevel inheritance.
+
      package name: org.all
      Project name: LanguageDetails
 
@@ -97,6 +100,29 @@ QUESTION 1:
      Methods     : english_Language
 
      Class name  : Telgu
-     Methods     : telgu_Language
+     Methods     : telugu_Language
+
+"""
+
+class Languageclass:
+    def all_Language(self):
+        print("This block contain all languages")
+class Tamil(Languageclass):
+    def tamil_Language(self):
+        print("This is Tamil language block")
+class English(Tamil):
+    def english_Language(self):
+        print("This is English language block")
+class Telugu(English):
+    def telugu_Language(self):
+        print("This is Telugu language block")
+
+T = Telugu()                                        
+T.all_Language()                                    # This block contain all languages
+T.tamil_Language()                                  # This is Tamil language block
+T.english_Language()                                # This is English language block
+T.telugu_Language()                                 # This is Telugu language block
+
+"""
 
 """
