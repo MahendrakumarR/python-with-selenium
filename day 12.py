@@ -214,7 +214,46 @@ f.close()
 
 """
 
+QUESTION 3.3:
+-------------
+Description :Create a File  in "E:\\Python Notes\\read.txt with "w" mode and follow below steps
+             Step 1: Add the below Employee details as array of file
+                     [100,vel,vel@gmail.com]
+                     [200,Nisha,Nisha@gmail.com]
+                     [300,Bala,Bala@gmail.com]
+                     [400,Ganesh,Ganesh@gmail.com]
+
 """
+f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "w")
+employee = [
+            [100,"vel","vel@gmail.com"],
+            [200,"Nisha","Nisha@gmail.com"],
+            [300,"Bala","Bala@gmail.com"],
+            [400,"Ganesh","Ganesh@gmail.com"]
+]
+
+for emp in employee:
+    f.write(str(emp) + '\n')
+f.close()
+
+"""
+QUESTION 4:
+-----------
+QUESTION 4.1:
+-------------
+Description :Write a file below content
+             Velmurugan currently focuses on teaching and delivering placement support for all his students, 
+             During this training journey, He has taken 400+ batches through different modes (Online, classroom, corporate). 
+             Worked with major IT companies such as Verizon, Infosys, Bank of America, as well as several smaller private companies in delivering high-quality training.
+             Through his innovative ideas, Velmurugan has also suggested many customer value adds to different private companies which helped in saving lot of efforts for different customers.
+
+"""
+f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "w")
+f.write("""Velmurugan currently focuses on teaching and delivering placement support for all his students, 
+During this training journey, He has taken 400+ batches through different modes (Online, classroom, corporate). 
+Worked with major IT companies such as Verizon, Infosys, Bank of America, as well as several smaller private companies in delivering high-quality training.
+Through his innovative ideas, Velmurugan has also suggested many customer value adds to different private companies which helped in saving lot of efforts for different customers.""")
+f.close()
 
 """
 QUESTION 4.2:
@@ -222,3 +261,19 @@ QUESTION 4.2:
 Description :Read all content in file  uing read() method
 
 """
+f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "r")
+f.read()
+f.close()
+
+"""
+QUESTION 4.3:
+-------------
+Description :Read all content in file after 100th index 
+
+"""
+f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "r")
+f.seek(100)
+v = f.read()
+print(v)
+f.close()
+
