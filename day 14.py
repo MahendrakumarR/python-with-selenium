@@ -124,5 +124,43 @@ T.english_Language()                                # This is English language b
 T.telugu_Language()                                 # This is Telugu language block
 
 """
+QUESTION 2:
+------------
+Description:
+create all class methods 
+Assume India as Parent Class and all class as Derived Class Using Hierarchical Inheritance
+
+     package name: org.india
+     Project name: SouthIndia
+
+     Class name  : India
+     Methods     : india
+
+     Class name  : TamilNadu
+     Methods     : tamil_Language
+
+     Class name  : kerala
+     Methods     : malayalam
+
+     Class name  : AndhraPradesh
+     Methods     : telugu
 
 """
+class India:
+    def india(self):
+        print("This block contain India")
+class TamilNadu(India):
+    def tamil_language(self):
+        print("This is Tamil language block")
+class Kerala(India):
+    def malayalam(self):
+        print("This is Malayalam language block")
+class AndhraPradesh(India):
+    def telugu(self):
+        print("This is Telugu language block")
+    
+a = AndhraPradesh()
+a.india()
+a.tamil_language()
+a.malayalam()
+a.telugu()
