@@ -161,9 +161,13 @@ class AndhraPradesh(India):
     
 a = AndhraPradesh()
 a.india()
-a.tamil_language()
-a.malayalam()
 a.telugu()
+
+k = Kerala()
+k.malayalam()
+
+t = TamilNadu()
+t.tamil_language()
 
 """
 
