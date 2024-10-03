@@ -1,6 +1,8 @@
+
+# Inheritance
+# Types of Inheritance
+
 """
-1.Inheritance
-2.Types of Inheritance
 
 QUESTIONS(Theory)
 --------------
@@ -244,8 +246,5 @@ d = Desktop()
 d.desktop_Size()
 d.computer_Model()
 
-"""
 
-
-"""
 
