@@ -170,5 +170,82 @@ t = TamilNadu()
 t.tamil_language()
 
 """
+QUESTION 3:
+-------------
+Description:
+create above 4 class methods 
+Assume Student as derived class and all class as Parent class using Multiple inheritance.
+
+     Project   :CollegeInformation
+     Package   :org.college
+
+     Class     :College
+     Methods   :college_Name(),college_Code(),college_Rank()
+
+     Class     :dept
+     Methods   :dept_Name()
+
+     Class     :Student
+     Methods   :student_Name(),student_Dept(),student_Id()
 
 """
+class College:
+    def college_Name(self):
+        print("Your College Name here")
+    def college_Code(self):
+        print("Your College code here")
+    def college_Rank(self):
+        print("Your College Rank here")
+
+class dept:
+    def dept_Name(self):
+        print("Your College Departments")
+
+class Student(College,dept):
+    def student_Name(self):
+        print("Enter Student Name")
+    def student_Dept(self):
+        print("Enter Student Department")
+    def student_Id(self):
+        print("Enter Student Id")
+
+s = Student()
+s.student_Name()
+s.student_Dept()
+s.student_Id()
+s.dept_Name()
+s.college_Rank()
+s.college_Code()
+s.college_Name()
+
+"""
+QUESTION 4:
+-----------
+Description:
+create above 2 class 
+Assume Desktop as derived class and computer class as Parent Class using single inheritance.
+
+     Project   :COmputer
+     Class     :Computer
+     Methods   :computer_Model()
+
+     Class     :Desktop
+     Methods   :desktop_Size()
+
+"""
+class Computer:
+    def computer_Model(self):
+        print("Your Computer Model")
+class Desktop(Computer):
+    def desktop_Size(self):
+        print("Your Desktop size is")
+
+d = Desktop()
+d.desktop_Size()
+d.computer_Model()
+
+"""
+
+
+"""
+
