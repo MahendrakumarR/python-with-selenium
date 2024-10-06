@@ -199,9 +199,61 @@ Output = 2500
 """
 odd = 0
 for i in range(1,101):
-    if i % 2 !=0:           
+    if i % 2 != 0:           
         odd += i
 print("Sum of Odd numbers are:",odd) # 2500
-        
+
+"""
+QUESTION 5:
+-----------
+Description: Count of even number 1 to 100
+
+Example:
+--------
+Output = 50
+
+"""
+c = 0
+for i in range(1,101):
+    if i % 2 == 0:
+        c += 1          # here using 1 for count
+print("Count of Even numbers are:",c) # 50
+
+"""
+QUESTION 6:
+-----------
+Description: Write a program to find the factorial of a number.
+
+Example:
+--------
+Input  = 5
+Output = 120
+
+"""
+user = 5
+
+result = 1
+
+for i in range(1,user+1):
+    result *= i
+print(f"factorial of {user} is:",result)  # factorial of 5 is: 120
+
+"""
+QUESTION 7:
+------------
+Description: Write a program to print the fibonacci series of a number 1 to 100.
+
+Example:
+--------
+Output = 0,1,1,2,3,5.....
+
+"""
+a = 0
+b = 1
+
+while a<=100:
+    print(a,end="")   # 01123581321345589
+    a, b = b, a+b   
     
+
 
