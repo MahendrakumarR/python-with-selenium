@@ -81,5 +81,49 @@ print(s*s2)   # PythonPythonPython
 print(a*b)    # 300
 
 """
+QUESTION 3:
+------------
+Description: Perform Operator Overloading Using len() method
+             
+               s="Greens"
+               
+               a=[10,20,30,40]
+
+               e=(20,67,99,89,30)
+
+               b={90,40,50,60,70}
+"""
+s="Greens"              
+a=[10,20,30,40]
+e=(20,67,99,89,30)
+b={90,40,50,60,70}
+
+print("Lenth of s is:",len(s))    # Lenth of s is: 6
+print("Lenth of a is:",len(a))    # Lenth of a is: 4
+print("Lenth of e is:",len(e))    # Lenth of e is: 5
+print("Lenth of b is:",len(b))    # Lenth of b is: 5
 
 """
+QUESTION 4:
+------------
+     Project   :EmployeeDetails
+     Package   :org.emp
+
+     Class     :Employee 
+     Methods   :emp_Id()
+
+Description : overload the method emp_Id() based on different Number of arguments
+
+"""
+class Employee:
+    def emp_Id(self,a):
+        print("The Value of a is:",a)
+    def emp_Id(self,b):
+        print("The Value of b is :",b)
+    def emp_Id(self,a,b):
+        print("The Value of a is:",a)
+        print("The Value of b is :",b)
+e = Employee()
+e.emp_Id(12,10)
+
+        
