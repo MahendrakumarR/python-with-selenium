@@ -159,6 +159,7 @@ Description :Create a File  in "E:\\Python Notes\\read.txt with "W" mode and fol
              Step 2: Close the file
 
 """
+print("===== Create file =====")
 f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "w")
 f.write("Welcome to Greens Technology Java Class . Java is simple language .")
 f.close()
@@ -172,6 +173,7 @@ Description :Create a File  in "E:\\Python Notes\\read.txt with "a" mode and fol
              Step 2: Close the file
 
 """
+print("===== Replace Word =====")
 f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "a")
 text ="\nWelcome to Greens Technology Java Class . Java is simple language ."
 c = text.replace("Java","python")
@@ -190,6 +192,7 @@ Description :Create a File  in "E:\\Python Notes\\read.txt with "w" mode and fol
                      Selenium Class
                      Mobile Testing Class
 """
+print("===== Write line by line =====")
 f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "w")
 f.write("Java Class")
 f.write("\nPython Class")
@@ -206,6 +209,7 @@ Description :Create a File  in "E:\\Python Notes\\read.txt with "a" mode and fol
                      Postman Tool
                      Appium 
 """
+print("===== Write line by line =====")
 f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "a")
 f.write("\nApi Testing")
 f.write("\nPostman Tool")
@@ -224,6 +228,7 @@ Description :Create a File  in "E:\\Python Notes\\read.txt with "w" mode and fol
                      [400,Ganesh,Ganesh@gmail.com]
 
 """
+print("===== Array of file =====")
 f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "w")
 employee = [
             [100,"vel","vel@gmail.com"],
@@ -248,6 +253,7 @@ Description :Write a file below content
              Through his innovative ideas, Velmurugan has also suggested many customer value adds to different private companies which helped in saving lot of efforts for different customers.
 
 """
+print("===== Write a content =====")
 f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "w")
 f.write("""Velmurugan currently focuses on teaching and delivering placement support for all his students, 
 During this training journey, He has taken 400+ batches through different modes (Online, classroom, corporate). 
@@ -261,6 +267,7 @@ QUESTION 4.2:
 Description :Read all content in file  uing read() method
 
 """
+print("===== Read all content =====")
 f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "r")
 f.read()
 f.close()
@@ -271,9 +278,24 @@ QUESTION 4.3:
 Description :Read all content in file after 100th index 
 
 """
+print("===== Read all content after 100th index (seek) =====")
 f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "r")
 f.seek(100)
 v = f.read()
 print(v)
 f.close()
 
+"""
+QUESTION 4.4:
+-------------
+Description :Read all content in file using readlines() method
+
+"""
+print("Read all content in file using readlines()")
+f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "r")
+f.readlines()
+f.close()
+
+"""
+
+"""

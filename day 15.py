@@ -124,6 +124,42 @@ class Employee:
         print("The Value of a is:",a)
         print("The Value of b is :",b)
 e = Employee()
-e.emp_Id(12,10)
+# e.emp_Id(12)   TypeError: Employee.emp_Id() missing 1 required positional argument: 'b'
+e.emp_Id(12,12)  # The Value of a is: 12  The Value of b is : 12
 
+"""
+QUESTION 5:
+------------
+     Project   :BankDetails
+     Package   :org.bank
+     Class     :BankInfo
+     Methods   :saving(),fixed(),deposit()
+
+     Class     :AxisBank
+     Methods   :deposit()
+
+Description: override the method deposit in BankInfo.
+
+"""
+class BankInfo:
+    def saving(self):
+        print("The Curent savings are : 10000")
+    def fixed(self):
+        print("The fixed is : 1000")
+    def deposit(self):
+        print("The deposite is : 30000")
+class AxisBank(BankInfo):
+    def deposit(self):
+        print("The deposite is : 60000")
+b = BankInfo()
+a = AxisBank()
+
+b.saving()          # The Curent savings are : 10000
+b.fixed()           # The fixed is : 1000
+b.deposit()         # The deposite is : 30000
+
+a.deposit()         # The deposite is : 60000
+
+
+# ------------------------------ End -----------------------------------------
         
