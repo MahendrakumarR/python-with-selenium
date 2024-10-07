@@ -340,4 +340,13 @@ with open(video_destination_path,"wb") as video_destination_file:
 
 print("copy video from Local Disk F to Local Disk D successfully completed")
 
+"""
+QUESTION 6:
+-----------
+QUESTION 6.1:
+-------------
+Description :Create a CSV File for 10 Employee Details
+
+"""
+
 
