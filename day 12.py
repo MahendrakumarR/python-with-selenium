@@ -291,11 +291,53 @@ QUESTION 4.4:
 Description :Read all content in file using readlines() method
 
 """
-print("Read all content in file using readlines()")
+print("===== Read all content in file using readlines() =====")
 f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "r")
-f.readlines()
+c = f.readlines()
+print(c)
 f.close()
 
 """
+QUESTION 5:
+-----------
+QUESTION 5.1:
+-------------
+Description :Copy Jpeg image from Local Disk F to Local Disk D
 
 """
+print("===== copy Jpeg image from Local Disk F to Local Disk D =====")
+
+source_path = r"F:\travel.JPG"
+
+destination_path = r"D:\travel.JPG"
+
+with open(source_path,"rb") as source_file:
+    data = source_file.read()
+
+with open(destination_path,"wb") as destination_file:
+    destination_file.write(data)
+
+print("copy Jpeg image from Local Disk F to Local Disk D successfully completed")
+
+
+"""
+QUESTION 5.2:
+-------------
+Description :Copy one video Local Disk F to Local Disk D
+
+"""
+print("===== copy video from Local Disk F to Local Disk D =====")
+
+video_source_path = r"F:\modelform.mp4"
+
+video_destination_path = r"D:\modelform.mp4"
+
+with open(video_source_path,"rb") as video_source_file:
+    data_video = video_source_file.read()
+
+with open(video_destination_path,"wb") as video_destination_file:
+    video_destination_file.write(data_video)
+
+print("copy video from Local Disk F to Local Disk D successfully completed")
+
+
