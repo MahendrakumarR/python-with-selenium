@@ -348,5 +348,29 @@ QUESTION 6.1:
 Description :Create a CSV File for 10 Employee Details 
 
 """
+print("===== Create a CSV File for 10 Employee Details =====")
 
+import csv
+
+header = ['id','name','age','position','salary']
+
+employee = [
+    [1,'henry',23,'field',20000],
+    [2,'jhon',20,'field',20000],
+    [3,'virat',35,'manager',30000],
+    [4,'kamal',56,'watchman',20000],
+    [5,'ajith',45,'field',20000],
+    [6,'vijay',34,'field',20000],
+    [7,'santhi',43,'hr',34000],
+    [8,'rose',54,'reception',18,000],
+    [9,'syed',36,'field',20000],
+    [10,'nazhir',23,'field',20000]
+]
+
+with open('employee_details.csv',mode='w',newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(header)
+    writer.writerows(employee)
+
+print("csv file created successfully ")
 
