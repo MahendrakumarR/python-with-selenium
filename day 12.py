@@ -106,6 +106,7 @@ Description :Create a File  in "D:\\File Operations\\read.txt with "r" mode and 
              c.Check whether file is closed or not?
 
 """
+"""
 print("====== read =====")
 f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "r")
 print(f.readable())                                            # True
@@ -115,7 +116,7 @@ f.close()
 print(f.closed)                                                # True
 
 """
-
+"""
 QUESTION 1.2:
 -------------
 Description :Create a File  in "D:\\File Operations\\write.txt with "w" mode and close file
@@ -123,6 +124,7 @@ Description :Create a File  in "D:\\File Operations\\write.txt with "w" mode and
              b.Check whether file is writable or not?
              c.Check whether file is closed or not?
 
+"""
 """
 print("====== write =====")
 f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "w")
@@ -133,6 +135,7 @@ f.close()
 print(f.closed)                                                # True
 
 """
+"""
 QUESTION 1.3:
 -------------
 Description :Create a File  in "E:\\File\\append.txt with "a" mode and close file
@@ -141,6 +144,7 @@ Description :Create a File  in "E:\\File\\append.txt with "a" mode and close fil
              c.Check whether file is closed or not?
 
 """
+"""
 print("====== append =====")
 f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "a")
 print(f.readable())                                            # False
@@ -148,6 +152,8 @@ print(f.writable())                                            # True
 print(f.closed)                                                # False
 f.close()
 print(f.closed)                                                # True
+
+"""
 
 """
 QUESTION 2:
@@ -159,11 +165,13 @@ Description :Create a File  in "E:\\Python Notes\\read.txt with "W" mode and fol
              Step 2: Close the file
 
 """
+"""
 print("===== Create file =====")
 f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "w")
 f.write("Welcome to Greens Technology Java Class . Java is simple language .")
 f.close()
 
+"""
 """
 QUESTION 2.2:
 -------------
@@ -173,6 +181,7 @@ Description :Create a File  in "E:\\Python Notes\\read.txt with "a" mode and fol
              Step 2: Close the file
 
 """
+"""
 print("===== Replace Word =====")
 f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "a")
 text ="\nWelcome to Greens Technology Java Class . Java is simple language ."
@@ -180,6 +189,7 @@ c = text.replace("Java","python")
 f.write(c + "\n")
 f.close()
 
+"""
 """
 QUESTION 3:
 -----------
@@ -192,6 +202,7 @@ Description :Create a File  in "E:\\Python Notes\\read.txt with "w" mode and fol
                      Selenium Class
                      Mobile Testing Class
 """
+"""
 print("===== Write line by line =====")
 f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "w")
 f.write("Java Class")
@@ -201,6 +212,7 @@ f.write("\nMobile Testing Class\n")
 f.close()
 
 """
+"""
 QUESTION 3.2:
 -------------
 Description :Create a File  in "E:\\Python Notes\\read.txt with "a" mode and follow below steps
@@ -208,6 +220,7 @@ Description :Create a File  in "E:\\Python Notes\\read.txt with "a" mode and fol
                      Api Testing
                      Postman Tool
                      Appium 
+"""
 """
 print("===== Write line by line =====")
 f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "a")
@@ -217,7 +230,7 @@ f.write("\nAppium")
 f.close()
 
 """
-
+"""
 QUESTION 3.3:
 -------------
 Description :Create a File  in "E:\\Python Notes\\read.txt with "w" mode and follow below steps
@@ -227,6 +240,7 @@ Description :Create a File  in "E:\\Python Notes\\read.txt with "w" mode and fol
                      [300,Bala,Bala@gmail.com]
                      [400,Ganesh,Ganesh@gmail.com]
 
+"""
 """
 print("===== Array of file =====")
 f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "w")
@@ -242,6 +256,7 @@ for emp in employee:
 f.close()
 
 """
+"""
 QUESTION 4:
 -----------
 QUESTION 4.1:
@@ -253,30 +268,34 @@ Description :Write a file below content
              Through his innovative ideas, Velmurugan has also suggested many customer value adds to different private companies which helped in saving lot of efforts for different customers.
 
 """
-print("===== Write a content =====")
-f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "w")
-f.write("""Velmurugan currently focuses on teaching and delivering placement support for all his students, 
-During this training journey, He has taken 400+ batches through different modes (Online, classroom, corporate). 
-Worked with major IT companies such as Verizon, Infosys, Bank of America, as well as several smaller private companies in delivering high-quality training.
-Through his innovative ideas, Velmurugan has also suggested many customer value adds to different private companies which helped in saving lot of efforts for different customers.""")
-f.close()
+
+
+# print("===== Write a content =====")
+# f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "w")
+# f.write("""Velmurugan currently focuses on teaching and delivering placement support for all his students, 
+#            During this training journey, He has taken 400+ batches through different modes (Online, classroom, corporate). 
+#            Worked with major IT companies such as Verizon, Infosys, Bank of America, as well as several smaller private companies in delivering high-quality training.
+#            Through his innovative ideas, Velmurugan has also suggested many customer value adds to different private companies which helped in saving lot of efforts for different customers.""")
+# f.close()
 
 """
+
 QUESTION 4.2:
 -------------
 Description :Read all content in file  uing read() method
 
 """
-print("===== Read all content =====")
-f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "r")
-f.read()
-f.close()
+# print("===== Read all content =====")
+# f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "r")
+# f.read()
+# f.close()
 
 """
 QUESTION 4.3:
 -------------
 Description :Read all content in file after 100th index 
 
+"""
 """
 print("===== Read all content after 100th index (seek) =====")
 f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "r")
@@ -286,17 +305,19 @@ print(v)
 f.close()
 
 """
+"""
 QUESTION 4.4:
 -------------
 Description :Read all content in file using readlines() method
 
+"""
 """
 print("===== Read all content in file using readlines() =====")
 f = open("F:\\PROJECTS\\PYTHON WITH SELENIUM\\read.txt", "r")
 c = f.readlines()
 print(c)
 f.close()
-
+"""
 """
 QUESTION 5:
 -----------
@@ -304,6 +325,7 @@ QUESTION 5.1:
 -------------
 Description :Copy Jpeg image from Local Disk F to Local Disk D
 
+"""
 """
 print("===== copy Jpeg image from Local Disk F to Local Disk D =====")
 
@@ -319,12 +341,13 @@ with open(destination_path,"wb") as destination_file:
 
 print("copy Jpeg image from Local Disk F to Local Disk D successfully completed")
 
-
+"""
 """
 QUESTION 5.2:
 -------------
 Description :Copy one video Local Disk F to Local Disk D
 
+"""
 """
 print("===== copy video from Local Disk F to Local Disk D =====")
 
@@ -341,12 +364,14 @@ with open(video_destination_path,"wb") as video_destination_file:
 print("copy video from Local Disk F to Local Disk D successfully completed")
 
 """
+"""
 QUESTION 6:
 -----------
 QUESTION 6.1:
 -------------
 Description :Create a CSV File for 10 Employee Details 
 
+"""
 """
 print("===== Create a CSV File for 10 Employee Details =====")
 
@@ -374,3 +399,35 @@ with open('employee_details.csv',mode='w',newline='') as file:
 
 print("csv file created successfully ")
 
+
+"""
+""" 
+QUESTION 6.2:
+-------------
+Description :Read 4 Employee Details from CSV File
+
+"""
+"""
+import csv
+
+print("===== Read 4 Employee Details from CSV File =====")
+
+try:
+    with open('employee_details.csv','r') as e_file:
+        emp_r = csv.reader(e_file)
+        
+        header = next(emp_r)
+
+        count = 0
+
+
+        for row in emp_r:    
+            print(row)
+            count += 1
+        
+            if count == 4:
+                break
+except FileNotFoundError:
+    print("===== FileNotFoundError =====")
+
+"""
