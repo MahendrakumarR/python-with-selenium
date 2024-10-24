@@ -440,6 +440,7 @@ Description :Create a ZIp File with Following text File
              Day1Task
              Day2Task
              Day3Task
+"""
 
 """
 print("===== Create a ZIp File with Following text File =====")
@@ -455,3 +456,14 @@ with zipfile.ZipFile(file_name,'w') as zip_:
         zip_.write(file)
         print(f"The{file} is added to {file_name} successfully")
 print(f"{file_name} created successfully")
+
+"""
+
+"""
+QUESTION 7.2:
+-------------
+Description :Read a Zip File with Following text File
+             Day1Task
+             Day2Task
+             Day3Task
+"""
