@@ -431,3 +431,27 @@ except FileNotFoundError:
     print("===== FileNotFoundError =====")
 
 """
+"""
+QUESTION 7:
+-----------
+QUESTION 7.1:
+-------------
+Description :Create a ZIp File with Following text File
+             Day1Task
+             Day2Task
+             Day3Task
+
+"""
+print("===== Create a ZIp File with Following text File =====")
+
+import zipfile
+
+file_to_zip = ['task1.txt','task2.txt','task3.txt']
+
+file_name = 'task.zip'
+
+with zipfile.ZipFile(file_name,'w') as zip_:
+    for file in file_to_zip:
+        zip_.write(file)
+        print(f"The{file} is added to {file_name} successfully")
+print(f"{file_name} created successfully")
