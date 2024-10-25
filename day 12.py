@@ -467,3 +467,98 @@ Description :Read a Zip File with Following text File
              Day2Task
              Day3Task
 """
+"""
+print("===== Read a Zip File with Following text File =====")
+
+import zipfile
+
+file_path = r'F:\PROJECTS\PYTHON WITH SELENIUM\task.zip'
+
+with zipfile.ZipFile(file_path,mode='r') as zip_f :
+    file_list = zip_f.namelist()
+    print('files archieved in zip names are:',file_list)
+
+    for file_name in ['task1.txt','task2.txt','task3.txt']:
+        if file_name in file_list:
+            with zip_f.open(file_name) as file :
+                content = file.read().decode('utf-8')
+                print(f'\ncontent of {file_name}:\n')
+                print(content)
+        else:
+            print(f'{file_name} not found in archieved zip') 
+    
+"""
+
+"""
+QUESTION 8:
+-----------
+QUESTION 8.1:
+-------------
+Description :Create a folder JavaNotes in Local Disk D using Os Module 
+             a.Check whether it is directory or not
+             b.Check whether it is file or not  
+
+"""
+"""
+print("===== Create a folder JavaNotes in Local Disk D using Os Module =====")
+
+import os
+
+folder_path = r'F:\PROJECTS\PYTHON WITH SELENIUM\JavaNotes'
+
+if not os.path.exists(folder_path):
+    os.makedirs(folder_path)
+    print('folder JavaNotes created succeessfully')
+else:
+    print('folder JavaNotes already exists')
+
+if os.path.isdir(folder_path):
+    print('JavaNote is a directory')
+else:
+    print('JavaNote is not a directory')
+
+if os.path.isfile(folder_path):
+    print('JavaNote is a file')
+else:
+    print('JavaNote is not a file')
+
+"""
+
+"""
+QUESTION 8.2:
+-------------
+Description :Create a folder Inheritance with in  JavaNotes in Local Disk D using Os Module
+              a.Check whether it is directory or not
+              b.Check whether it is file or not 
+
+"""
+print("===== Create a folder Inheritance with in  JavaNotes in Local Disk D using Os Module =====")
+
+import os
+
+parent_folder = r'F:\PROJECTS\PYTHON WITH SELENIUM\JavaNotes'
+
+new_folder = os.path.join(parent_folder,'inheritance')
+
+if not os.path.exists(parent_folder):
+    os.makedirs(parent_folder)
+    print('parent folder JavaNotes created succeessfully')
+else:
+    print('parent folder JavaNotes already exists')
+
+if not os.path.exists(new_folder):
+    os.makedirs(new_folder)
+    print('new folder inheritance created succeessfully')
+else:
+    print('new folder inheritance already exists')
+
+
+if os.path.isdir(new_folder):
+    print('Inheritance is a directory')
+else:
+    print('Inheritance is not a directory')
+
+if os.path.isfile(new_folder):
+    print('Inheritance is a file')
+else:
+    print('Inheritance is not a file')
