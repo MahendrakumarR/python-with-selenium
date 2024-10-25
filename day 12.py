@@ -532,6 +532,8 @@ Description :Create a folder Inheritance with in  JavaNotes in Local Disk D usin
               b.Check whether it is file or not 
 
 """
+"""
+
 print("===== Create a folder Inheritance with in  JavaNotes in Local Disk D using Os Module =====")
 
 import os
@@ -562,3 +564,5 @@ if os.path.isfile(new_folder):
     print('Inheritance is a file')
 else:
     print('Inheritance is not a file')
+
+"""
