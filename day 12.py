@@ -566,3 +566,79 @@ else:
     print('Inheritance is not a file')
 
 """
+
+"""
+
+QUESTION 8.3:
+-------------
+Description :Remove a folder JavaNotes in Local Disk D using Os Module   
+
+"""
+"""
+print("===== Remove a folder JavaNotes in Local Disk D using Os Module =====")
+
+import os
+
+folder_path = r"JavaNotes\inheritance"
+
+try:
+    os.rmdir(folder_path)
+    print("Folder Removed Successfully")
+except FileNotFoundError:
+    print("Folder Not Found.")
+except OSError:
+    print("Folder is not empty. unable to remove")
+
+"""
+"""
+QUESTION 9:
+-----------
+QUESTION 9.1:
+-------------
+Description :Display list of folder present in particular folder using Listdir?  
+
+"""
+
+"""
+print("===== Display list of folder present in particular folder using Listdir?  =====")
+
+import os
+
+dir_path = r"JavaNotes\inheritance"
+
+try:
+    items = os.listdir(dir_path)
+
+    folders = [item for item in items if os.path.isdir(os.path.join(dir_path,item))]
+
+    print("Folders in specified Directory")
+
+    for folder in folders:
+        print(folder)
+
+except FileNotFoundError:
+    print("File Not Found Error")
+
+"""
+"""
+QUESTION 9.2:
+-------------
+Description :Display sub list of folder present in particular folder using walk? 
+
+"""
+"""
+print("===== Display sub list of folder present in particular folder using walk? =====")
+
+import os
+
+dir_path = r"JavaNotes\inheritance"
+
+for root,dirs,files in os.walk(dir_path):
+    print(f"subfolders is {root}")
+
+    for dir_name in dirs:
+        print(f"-{dir_name}")
+
+"""
+
+# ------------------------------ End -----------------------------------------
