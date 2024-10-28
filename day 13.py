@@ -73,7 +73,7 @@ QUESTION 1:
 Description: Create an object for employee class and call above methods 
 
 """
-import datetime
+"""
 
 class Employee:
 
@@ -103,6 +103,139 @@ obj.emp_Dob("21.10.2001")
 obj.emp_Phone(9876543210)
 obj.emp_Email("mahe@gmail.com")
 obj.emp_Address("Erode")
+
+"""
+
+"""
+QUESTION 2:
+-----------
+     Class     :GreensTech
+     Methods   :greens_Omr(id),greens_Adayar(name),greens_Tambaram(address),greens_Velacherry(count)
+
+Description: Create an object for GreensTech class and call above methods and also pass the arguments
+"""
+"""
+class GreensTech:
+
+    def greens_Omr(self,id):
+        print(f"The id is {id}")
+
+    def greens_Adayar(self,name):
+        print(f"The name is {name}")
+    
+    def greens_Tambaram(self,address):
+        print(f"The address is {address}")
+
+    def greens_Velacherry(self,count):
+        print(f"The count is {count}")
+gt = GreensTech()
+
+gt.greens_Omr("12345")
+gt.greens_Adayar("Adayar")
+gt.greens_Tambaram("chennai")
+gt.greens_Velacherry("6")
+
+"""
+"""
+Question 3:
+-------------
+Description : Find the output
+class Employee_details:
+      def __init__(self):
+          print("constructor")
+
+      def add(self):
+          print("add")
+
+d = Employee_details()
+d.add()
+
+"""
+"""
+class Employee_details:
+      def __init__(self):
+          print("constructor")
+
+      def add(self):
+          print("add")
+
+d = Employee_details()
+d.add()
+
+"""
+
+"""
+Question 4:
+-------------
+Description : Find the output
+
+class Employee_details:
+      def __init__(self,id,name,email):
+          self.id=id
+          self.name=name
+          self.email=email
+
+      def add(self):
+          print(self.id)
+
+d = Employee_details(10,"vel","vel@gmail.com")
+d.add()
+
+"""
+"""
+class Employee_details:
+      def __init__(self,id,name,email):
+          self.id=id
+          self.name=name
+          self.email=email
+
+      def add(self):
+          print(self.id)
+
+d = Employee_details(10,"vel","vel@gmail.com")
+d.add()
+
+"""
+"""
+Question 5:
+-------------
+Description : Find the output
+
+class Employee_details:
+      def __init__(self,id,name,email):
+          self.empid=id
+          self.empname=name
+          self.empemail=email
+      def getId(self):
+          print(self.empid)
+      def getName(self):
+          print(self.empname)
+      def getemail(self):
+          print(self.empemail)
+d = Employee_details(10,"vel","vel@gmail.com")
+d.getId()
+d.getName()
+
+"""
+"""
+class Employee_details:
+      def __init__(self,id,name,email):
+          self.empid=id
+          self.empname=name
+          self.empemail=email
+      def getId(self):
+          print(self.empid)
+      def getName(self):
+          print(self.empname)
+      def getemail(self):
+          print(self.empemail)
+d = Employee_details(10,"vel","vel@gmail.com")
+d.getId()
+d.getName()
+
+"""
+
+# ------------------------------ End -----------------------------------------
 
 
 
