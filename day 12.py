@@ -1,3 +1,6 @@
+
+# FIle Handling
+
 """
 What is meant by File operation?
 
@@ -633,7 +636,7 @@ import os
 
 dir_path = r"JavaNotes\inheritance"
 
-for root,dirs,files in os.walk(dir_path):
+for root,dirs,files in os.walk(dir_path):   
     print(f"subfolders is {root}")
 
     for dir_name in dirs:
