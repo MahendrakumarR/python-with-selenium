@@ -243,7 +243,7 @@ class Desktop(Computer):
         print("Your Desktop size is")
 
 d = Desktop()
-d.desktop_Size()
+d.desktop_Size()  
 d.computer_Model()
 
 
